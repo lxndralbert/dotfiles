@@ -1,6 +1,6 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 window:
-  decorations: Full
+  decorations: full
   startup_mode: Maximized
   
 font:
