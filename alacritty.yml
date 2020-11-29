@@ -1,38 +1,45 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
+env:
+  TERM: xterm-256color
 window:
   decorations: full
   startup_mode: Maximized
-  
+
 font:
   normal:
     family: "Fira Code Retina"
     style: Regular
-  size: 14.0
+  size: 12.0
   use_thin_strokes: true
 
 colors:
-  # Default colors
   primary:
     background: "#000000"
-    foreground: "#ffffff"
+    foreground: "#00ff00"
+
   # Normal colors
   normal:
-    black: "#000000"
-    red: "#cd0000"
-    green: "#00cd00"
-    yellow: "#cdcd00"
-    blue: "#0000ee"
-    magenta: "#cd00cd"
-    cyan: "#00cdcd"
-    white: "#e5e5e5"
+    black: "#2e3436"
+    red: "#cc0000"
+    green: "#73d216"
+    yellow: "#edd400"
+    blue: "#3465a4"
+    magenta: "#75507b"
+    cyan: "#06989a"
+    white: "#d3d7cf"
 
   # Bright colors
   bright:
-    black: "#7f7f7f"
-    red: "#ff0000"
-    green: "#00ff00"
-    yellow: "#ffff00"
-    blue: "#5c5cff"
-    magenta: "#ff00ff"
-    cyan: "#00ffff"
-    white: "#ffffff"
+    black: "#2e3436"
+    red: "#ef2929"
+    green: "#8ae234"
+    yellow: "#fce94f"
+    blue: "#729fcf"
+    magenta: "#ad7fa8"
+    cyan: "#34e2e2"
+    white: "#eeeeec"
+
+cursor:
+  style:
+    shape: Underline
+    blinking: Always
