@@ -4,9 +4,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/alexander/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export PATH=$PATH:$HOME/.arkade/bin/
-export PATH=$PATH:$HOME/.linkerd2/bin
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,7 +69,7 @@ ZSH_THEME="essembeh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm kubectl docker node sudo helm)
+plugins=(git docker docker-compose kubectl sudo npm node autopep8 doctl golang helm history pip pipenv pylint python rsync)
 
 source $ZSH/oh-my-zsh.sh
 
