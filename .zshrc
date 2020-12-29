@@ -73,6 +73,7 @@ plugins=(git docker docker-compose kubectl sudo npm node autopep8 doctl golang h
 
 source $ZSH/oh-my-zsh.sh
 
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -98,4 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-fpath+=${ZDOTDIR:-~}/.zsh_functions
+unsetopt PROMPT_SP
+
+path+=${ZDOTDIR:-~}/.zsh_functions
+figlet -f slant $(hostname) - $(tty | grep -o '.$') | lolcat 
