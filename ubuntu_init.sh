@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install git vim zsh hey transmission curl wget tmux fonts-firacode apt-transport-https gnupg2 cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 python3-pip pipenv -y
+sudo apt install git vim zsh hey transmission curl wget tmux fonts-firacode apt-transport-https gnupg2 cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 python3-pip pipenv figlet lolcat -y
 
 cd /Downloads
 
