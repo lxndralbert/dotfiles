@@ -7,6 +7,7 @@ set termguicolors
 
 set background=light     " dark theme
 let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_hls_cursor = 'orange'
 colorscheme gruvbox
 set completeopt-=preview
 filetype plugin indent on
