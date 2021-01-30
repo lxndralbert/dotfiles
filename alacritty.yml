@@ -42,5 +42,5 @@ colors:
 
 cursor:
   style:
-    shape: Underline
+    shape: Block
     blinking: Always
