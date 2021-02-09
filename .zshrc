@@ -9,7 +9,7 @@ export PATH=$PATH:/usr/local/go/bin
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="essembeh"
+ZSH_THEME="philips"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -46,6 +46,8 @@ ZSH_THEME="essembeh"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -69,10 +71,9 @@ ZSH_THEME="essembeh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose kubectl sudo npm node autopep8 doctl golang helm history pip pipenv pylint python rsync)
+plugins=(git kubectl helm docker docker-compose sudo doctl)
 
 source $ZSH/oh-my-zsh.sh
-
 
 # User configuration
 
@@ -99,7 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+fpath+=${ZDOTDIR:-~}/.zsh_functions
 unsetopt PROMPT_SP
-
-path+=${ZDOTDIR:-~}/.zsh_functions
-figlet -f slant $(hostname) - $(tty | grep -o '.$') | lolcat 
+figlet -f larry3d -w $(tput cols) $(hostname) -c | lolcat 
