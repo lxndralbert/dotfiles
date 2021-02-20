@@ -16,33 +16,34 @@ font:
 # VSCode's integrated terminal default colors
 # Primary and dimmed colors needed
 colors:
-  # Default colors
+  name: Erebus
+  author: ""
   primary:
-    background: "#101421"
-    foreground: "#fffbf6"
-
-  # Normal colors
+    background: "#000000"
+    foreground: "#ffffff"
+  cursor:
+    text: "#000000"
+    cursor: "#ffffff"
   normal:
-    black: "#2e2e2e"
-    red: "#eb4129"
-    green: "#abe047"
-    yellow: "#f6c744"
-    blue: "#47a0f3"
-    magenta: "#7b5cb0"
-    cyan: "#64dbed"
-    white: "#e5e9f0"
-
-  # Bright colors
+    black: "#757575"
+    red: "#ff5f5f"
+    green: "#de8a36"
+    yellow: "#d78787"
+    blue: "#af5fd7"
+    magenta: "#ff87d7"
+    cyan: "#dea3e5"
+    white: "#b8b8b8"
   bright:
-    black: "#565656"
-    red: "#ec5357"
-    green: "#c0e17d"
-    yellow: "#f9da6a"
-    blue: "#49a4f8"
-    magenta: "#a47de9"
-    cyan: "#99faf2"
-    white: "#ffffff"
+    black: "#b8b8b8"
+    red: "#d78787"
+    green: "#ff9f6f"
+    yellow: "#ff5f5f"
+    blue: "#dea3e5"
+    magenta: "#d7afaf"
+    cyan: "#af5fd7"
+    white: "#757575"
 cursor:
   style:
     shape: Block
     blinking: Always
+
