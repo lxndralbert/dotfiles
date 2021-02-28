@@ -7,7 +7,7 @@ window:
 
 font:
   normal:
-    family: "Fira Code Retina"
+    family: "FiraCode Nerd Font"
     style: Regular
   size: 16.0
   use_thin_strokes: true
@@ -16,32 +16,37 @@ font:
 # VSCode's integrated terminal default colors
 # Primary and dimmed colors needed
 colors:
-  name: Erebus
-  author: ""
+  # Default colors
   primary:
-    background: "#000000"
-    foreground: "#ffffff"
+    background: "0x000b1e"
+    foreground: "0x0abdc6"
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: "#000000"
-    cursor: "#ffffff"
+    text: "0x000b1e"
+    cursor: "0x0abdc6"
+
+  # Normal colors
   normal:
-    black: "#757575"
-    red: "#ff5f5f"
-    green: "#de8a36"
-    yellow: "#d78787"
-    blue: "#af5fd7"
-    magenta: "#ff87d7"
-    cyan: "#dea3e5"
-    white: "#b8b8b8"
+    black: "0x123e7c"
+    red: "0xff0000"
+    green: "0xd300c4"
+    yellow: "0xf57800"
+    blue: "0x123e7c"
+    magenta: "0x711c91"
+    cyan: "0x0abdc6"
+    white: "0xd7d7d5"
+
+  # Bright colors
   bright:
-    black: "#b8b8b8"
-    red: "#d78787"
-    green: "#ff9f6f"
-    yellow: "#ff5f5f"
-    blue: "#dea3e5"
-    magenta: "#d7afaf"
-    cyan: "#af5fd7"
-    white: "#757575"
+    black: "0x1c61c2"
+    red: "0xff0000"
+    green: "0xd300c4"
+    yellow: "0xf57800"
+    blue: "0x00ff00"
+    magenta: "0x711c91"
+    cyan: "0x0abdc6"
+    white: "0xd7d7d5"
 cursor:
   style:
     shape: Block
